@@ -1,0 +1,146 @@
+.oew-product-share {
+  display: block;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  margin-top: 70px;
+  padding: 0;
+  text-align: center; }
+  .oew-product-share ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .oew-product-share ul li {
+      border-right-width: 1px;
+      border-style: solid;
+      border-color: #e9e9e9;
+      padding: 20px 30px; }
+      .oew-product-share ul li:last-child {
+        border-right: 0; }
+      .oew-product-share ul li a {
+        display: block;
+        border: 0;
+        width: auto;
+        height: auto;
+        font-size: 13px;
+        line-height: 1.5;
+        margin: 0 !important;
+        border-radius: 0; }
+        .oew-product-share ul li a .ops-icon-wrap {
+          display: -webkit-inline-flex;
+          display: -ms-inline-flex;
+          display: inline-flex;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          background-color: #333;
+          width: 40px;
+          height: 40px;
+          line-height: 1;
+          font-size: 16px;
+          border-radius: 50%;
+          vertical-align: middle;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+          .oew-product-share ul li a .ops-icon-wrap .ops-icon {
+            fill: #fff;
+            width: 16px;
+            height: 16px; }
+        .oew-product-share ul li a .product-share-text {
+          display: inline-block;
+          vertical-align: middle;
+          padding: 0 0 0 10px;
+          width: calc(100% - 50px); }
+      .oew-product-share ul li.twitter a:hover {
+        color: #00aced; }
+        .oew-product-share ul li.twitter a:hover .ops-icon-wrap {
+          background-color: #00aced; }
+      .oew-product-share ul li.facebook a:hover {
+        color: #3b5998; }
+        .oew-product-share ul li.facebook a:hover .ops-icon-wrap {
+          background-color: #3b5998; }
+      .oew-product-share ul li.pinterest a:hover {
+        color: #cb2027; }
+        .oew-product-share ul li.pinterest a:hover .ops-icon-wrap {
+          background-color: #cb2027; }
+      .oew-product-share ul li.email a:hover {
+        color: #3fc387; }
+        .oew-product-share ul li.email a:hover .ops-icon-wrap {
+          background-color: #3fc387; }
+
+.content-full-width .oew-product-share ul li a .product-share-text,
+.content-full-screen .oew-product-share ul li a .product-share-text {
+  width: calc(80% - 50px); }
+
+/*------------------------------------*
+	Responsive
+*------------------------------------*/
+@media only screen and (max-width: 1280px) {
+  .oew-product-share ul li {
+    padding: 20px 12px; }
+  .oew-product-share ul li a .ops-icon-wrap {
+    margin: 0 auto 12px auto; }
+  .oew-product-share ul li a .product-share-text,
+  .content-full-width .oew-product-share ul li a .product-share-text,
+  .content-full-screen .oew-product-share ul li a .product-share-text {
+    display: block;
+    padding: 0;
+    width: auto; } }
+
+/*------------------------------------*
+	Phone Portrait and Landscape
+*------------------------------------*/
+@media only screen and (max-width: 767px) {
+  .oew-product-share ul {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .oew-product-share ul li {
+    width: 50%;
+    border-right-width: 0;
+    padding: 20px 0; }
+  .oew-product-share ul li:last-child {
+    border-bottom-width: 0; }
+  .oew-product-share ul li:nth-child(-n+2) {
+    border-bottom-width: 1px; }
+  .oew-product-share ul li:nth-child(2n+1) {
+    border-right-width: 1px; }
+  .oew-product-share ul li a {
+    display: inline-block; }
+  .rtl .oew-product-share ul li {
+    border-left-width: 0; }
+  .rtl .oew-product-share ul li:nth-child(2n+1) {
+    border-left-width: 1px;
+    border-right-width: 0; } }
+
+/*------------------------------------*
+	Small Phone
+*------------------------------------*/
+@media only screen and (max-width: 320px) {
+  .oew-product-share ul li {
+    width: 100%;
+    border-top-width: 1px; }
+  .oew-product-share ul li:first-child {
+    border-top-width: 0; }
+  .oew-product-share ul li:nth-child(-n+2) {
+    border-bottom-width: 0; }
+  .oew-product-share ul li:nth-child(2n+1) {
+    border-right-width: 0; }
+  .rtl .oew-product-share ul li:nth-child(2n+1) {
+    border-left-width: 0;
+    border-right-width: 0; } }

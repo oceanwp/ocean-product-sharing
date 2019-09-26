@@ -1,0 +1,192 @@
+// Display inline flex
+@mixin display-inline-flex() {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+}
+
+// Display flex
+@mixin display-flex() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+// Flex wrap
+@mixin flex-wrap( $args ) {
+    -webkit-flex-wrap: $args;
+    -ms-flex-wrap: $args;
+    flex-wrap: $args;
+}
+
+// Align items
+@mixin align-items( $args ) {
+    -webkit-align-items: $args;
+	-ms-flex-align: $args;
+	align-items: $args;
+}
+
+// Justify content
+@mixin justify-content( $args ) {
+	-webkit-justify-content: $args;
+	-ms-flex-pack: $args;
+	justify-content: $args;
+}
+
+// Transition
+@mixin transition( $args ) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+.oew-product-share {
+    display: block;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    margin-top: 70px;
+    padding: 0;
+    text-align: center;
+
+    ul {
+    	@include display-flex();
+    	@include align-items( center );
+    	@include justify-content( center );
+    	list-style: none;
+	    margin: 0;
+	    padding: 0;
+
+	    li {
+		    border-right-width: 1px;
+		    border-style: solid;
+		    border-color: #e9e9e9;
+		    padding: 20px 30px;
+
+		    &:last-child {
+		    	border-right: 0;
+		    }
+
+		    a {
+		    	display: block;
+			    border: 0;
+			    width: auto;
+			    height: auto;
+			    font-size: 13px;
+			    line-height: 1.5;
+			    margin: 0 !important;
+			    border-radius: 0;
+
+		    	.ops-icon-wrap {
+		    		@include display-inline-flex();
+					@include align-items( center );
+					@include justify-content( center );
+		    		background-color: #333;
+				    width: 40px;
+				    height: 40px;
+				    line-height: 1;
+				    font-size: 16px;
+				    border-radius: 50%;
+	    			vertical-align: middle;
+	    			@include transition( all .3s ease );
+
+	    			.ops-icon {
+	    				fill: #fff;
+	    				width: 16px;
+				    	height: 16px;
+	    			}
+		    	}
+
+		    	.product-share-text {
+		    		display: inline-block;
+				    vertical-align: middle;
+				    padding: 0 0 0 10px;
+				    width: calc(100% - 50px);
+		    	}
+		    }
+
+			&.twitter a:hover {
+			    color: #00aced;
+
+			    .ops-icon-wrap {
+			    	background-color: #00aced;
+			    }
+			}
+
+			&.facebook a:hover {
+			    color: #3b5998;
+
+			    .ops-icon-wrap {
+			    	background-color: #3b5998;
+			    }
+			}
+
+			&.pinterest a:hover {
+			    color: #cb2027;
+
+			    .ops-icon-wrap {
+			    	background-color: #cb2027;
+			    }
+			}
+
+			&.email a:hover {
+			    color: #3fc387;
+
+			    .ops-icon-wrap {
+			    	background-color: #3fc387;
+			    }
+			}
+	    }
+    }
+}
+
+.content-full-width .oew-product-share ul li a .product-share-text,
+.content-full-screen .oew-product-share ul li a .product-share-text {
+	width: calc(80% - 50px);
+}
+
+/*------------------------------------*
+	Responsive
+*------------------------------------*/
+@media only screen and (max-width: 1280px) {
+
+	.oew-product-share ul li { padding: 20px 12px; }
+	.oew-product-share ul li a .ops-icon-wrap { margin: 0 auto 12px auto; }
+	.oew-product-share ul li a .product-share-text,
+	.content-full-width .oew-product-share ul li a .product-share-text,
+	.content-full-screen .oew-product-share ul li a .product-share-text { display: block; padding: 0; width: auto; }
+
+}
+
+/*------------------------------------*
+	Phone Portrait and Landscape
+*------------------------------------*/
+@media only screen and (max-width: 767px) {
+
+	.oew-product-share ul { @include flex-wrap( wrap ); }
+	.oew-product-share ul li { width: 50%; border-right-width: 0; padding: 20px 0; }
+	.oew-product-share ul li:last-child { border-bottom-width: 0; }
+	.oew-product-share ul li:nth-child(-n+2) { border-bottom-width: 1px; }
+	.oew-product-share ul li:nth-child(2n+1) { border-right-width: 1px; }
+	.oew-product-share ul li a { display: inline-block; }
+
+	.rtl .oew-product-share ul li { border-left-width: 0; }
+	.rtl .oew-product-share ul li:nth-child(2n+1) { border-left-width: 1px; border-right-width: 0; }
+
+}
+
+/*------------------------------------*
+	Small Phone
+*------------------------------------*/
+@media only screen and (max-width: 320px) {
+
+	.oew-product-share ul li { width: 100%; border-top-width: 1px; }
+	.oew-product-share ul li:first-child { border-top-width: 0; }
+	.oew-product-share ul li:nth-child(-n+2) { border-bottom-width: 0; }
+	.oew-product-share ul li:nth-child(2n+1) { border-right-width: 0; }
+
+	.rtl .oew-product-share ul li:nth-child(2n+1) { border-left-width: 0; border-right-width: 0; }
+
+}

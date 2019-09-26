@@ -1,0 +1,3 @@
+.oew-product-share ul li { border-left-width: 1px; border-right-width: 0; }
+.oew-product-share ul li:last-child { border-left-width: 0; }
+.oew-product-share ul li a .product-share-text { padding: 0 10px 0 0; }
