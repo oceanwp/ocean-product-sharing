@@ -2,66 +2,91 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ocean Product Sharing\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-10-10 21:18:27+00:00\n"
+"POT-Creation-Date: 2020-03-18 00:21+0100\n"
+"PO-Revision-Date: 2020-03-18 00:21+0100\n"
+"Last-Translator: sabiertas <angel@solucionesabiertas.es>\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-10-27 10:46+0000\n"
-"Last-Translator: sabiertas <angel@solucionesabiertas.es>\n"
-"Language-Team: Spanish (Spain)\n"
-"X-Generator: Loco - https://localise.biz/\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: UNITED STATES\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _esc_attr__;esc_attr_x;esc_attr_e;esc_html__;"
 "esc_html_e;esc_html_x;__;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
-"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"esc_attr__\n"
 "X-Textdomain-Support: yes\n"
-"Language: es-ES"
+"X-Poedit-SearchPath-0: .\n"
 
-#: ocean-product-sharing.php:132 ocean-product-sharing.php:141
+#: ocean-product-sharing.php:130 ocean-product-sharing.php:139
 msgid "Cheatin&#8217; huh?"
 msgstr "¿Haciendo trampas?"
 
-#: ocean-product-sharing.php:194
-msgid "Ocean Product Sharing requires that you use ocean as your parent theme."
-msgstr "Ocean Product Sharing necesita que OceanWP sea el tema padre."
-
-#: ocean-product-sharing.php:194
-msgid "Install Ocean Now"
-msgstr "Instalar OceanWp ahora"
-
-#: ocean-product-sharing.php:208
+#: ocean-product-sharing.php:193
 msgid "Product Sharing"
 msgstr "Compartir productos"
 
-#: ocean-product-sharing.php:222
+#: ocean-product-sharing.php:206
+msgid "Sharing Buttons"
+msgstr ""
+
+#: ocean-product-sharing.php:228
 msgid "Borders Color"
 msgstr "Color de los bordes"
 
-#: ocean-product-sharing.php:238
+#: ocean-product-sharing.php:244
 msgid "Icons Background Color"
 msgstr "Color de fondo de los iconos"
 
-#: ocean-product-sharing.php:254
+#: ocean-product-sharing.php:260
 msgid "Icons Color"
 msgstr "Color de los iconos"
 
-#: template/product-share.php:25
+#: template/product-share.php:28
+msgid "Share this product on social media"
+msgstr ""
+
+#: template/product-share.php:38
+#, fuzzy
+#| msgid "Share on Facebook"
+msgid "Share on Twitter"
+msgstr "Compartir en Facebook"
+
+#: template/product-share.php:39 template/product-share.php:55
+#: template/product-share.php:72 template/product-share.php:95
+msgid "Opens in a new window"
+msgstr ""
+
+#: template/product-share.php:45
 msgid "Tweet This Product"
 msgstr "Twitea este producto"
 
-#: template/product-share.php:32
+#: template/product-share.php:54 template/product-share.php:62
 msgid "Share on Facebook"
 msgstr "Compartir en Facebook"
 
-#: template/product-share.php:39
+#: template/product-share.php:71
+msgid "Share on Pinterest"
+msgstr ""
+
+#: template/product-share.php:85
 msgid "Pin This Product"
 msgstr "Compartir este producto en Pinterest"
 
-#: template/product-share.php:46
+#: template/product-share.php:94
+msgid "Share via email"
+msgstr ""
+
+#: template/product-share.php:104
 msgid "Mail This Product"
 msgstr "Recomendar por correo este producto"
+
+#~ msgid ""
+#~ "Ocean Product Sharing requires that you use ocean as your parent theme."
+#~ msgstr "Ocean Product Sharing necesita que OceanWP sea el tema padre."
+
+#~ msgid "Install Ocean Now"
+#~ msgstr "Instalar OceanWp ahora"
