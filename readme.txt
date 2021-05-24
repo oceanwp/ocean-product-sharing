@@ -1,29 +1,37 @@
 === Ocean Product Sharing ===
-Contributors: oceanwp
+Contributors: oceanwp, apprimit, wpfleek
 Tags: social, social sharing, social share product, share product, oceanwp
-Requires at least: 4.5
-Tested up to: 5.2
-Stable tag: 1.0.8
+Requires at least: 5.3
+Tested up to: 5.4
+Requires PHP: 7.0
+Stable tag: 1.1.0
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+
+Website: https://oceanwp.org/
+Support: https://oceanwp.org/support/
+Documentation: https://docs.oceanwp.org/
+Extensions: https://oceanwp.org/extensions/
+Email: support@oceanwp.org
 
 == Description ==
 
-A simple plugin to add social share buttons to your product page, compatible with WooCommerce and Easy Digital Downloads.
+A simple plugin to add social sharing buttons to your single product pages. Compatible with WooCommerce and Easy Digital Downloads.
 This plugin requires the [OceanWP](https://oceanwp.org/) theme to be installed.
 
 == Installation ==
 
 1. Upload `ocean-product-sharing` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Configure it via the Product Sharing section of the customizer
+2. Activate the plugin through the 'Plugins' menu in WordPress dashboard
+3. Configure it via the Product Sharing section of the Customizer (Appearance > Customize)
 4. Done!
 
 == Frequently Asked Questions ==
 
 = I installed the plugin but it does not work =
 
-This plugin will only work with the [OceanWP](https://oceanwp.org/) theme.
+This plugin will only function with the [OceanWP](https://oceanwp.org/) theme.
 
 == Screenshots ==
 
@@ -31,6 +39,11 @@ This plugin will only work with the [OceanWP](https://oceanwp.org/) theme.
 2. On full width page.
 
 == Changelog ==
+
+= 1.1.0 =
+- Added: Improved Accessibility.
+- Updated: Translation strings.
+- Updated: readme.txt file.
 
 = 1.0.8 =
 - Added: Codes for the Freemius switch.
