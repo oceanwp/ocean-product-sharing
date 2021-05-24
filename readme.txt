@@ -2,9 +2,9 @@
 Contributors: oceanwp, apprimit, wpfleek
 Tags: social, social sharing, social share product, share product, oceanwp
 Requires at least: 5.3
-Tested up to: 5.4
+Tested up to: 5.7.2
 Requires PHP: 7.0
-Stable tag: 1.1.0
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,12 @@ This plugin will only function with the [OceanWP](https://oceanwp.org/) theme.
 2. On full width page.
 
 == Changelog ==
+
+= 1.1.2 =
+- Fixed: Social icon color is not working.
+
+= 1.1.1 =
+- Added: Version updated for WordPress 5.7.
 
 = 1.1.0 =
 - Added: Improved Accessibility.

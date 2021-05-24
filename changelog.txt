@@ -1,3 +1,9 @@
+= 1.1.2 =
+- Fixed: Social icon color is not working.
+
+= 1.1.1 =
+- Added: Version updated for WordPress 5.7.
+
 = 1.1.0 =
 - Added: Improved Accessibility.
 - Updated: Translation strings.
