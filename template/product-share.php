@@ -35,7 +35,7 @@ $product_img	= wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 			if ( 'twitter' == $site ) { ?>
 
 				<li class="twitter">
-					<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=<?php echo html_entity_decode( wp_strip_all_tags( $product_title ) ); ?>" onclick="ops_onClick( this.href );return false;">
+					<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=<?php echo html_entity_decode( wp_strip_all_tags( $product_title ) ); ?>+<?php echo esc_url( $product_url ); ?>" onclick="ops_onClick( this.href );return false;">
 						<span class="screen-reader-text"><?php echo esc_attr__( 'Opens in a new window', 'ocean-product-sharing' ); ?></span>
 						<span class="ops-icon-wrap">
 							<svg class="ops-icon" aria-labelledby="ops-twitter-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
