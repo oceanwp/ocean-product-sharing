@@ -42,6 +42,7 @@ This plugin will only function with the [OceanWP](https://oceanwp.org/) theme.
 
 = 1.1.2 =
 - Fixed: Social icon color is not working.
+- Fixed: Twitter social share link.
 
 = 1.1.1 =
 - Added: Version updated for WordPress 5.7.
