@@ -41,7 +41,7 @@ This plugin will only function with the [OceanWP](https://oceanwp.org/) theme.
 == Changelog ==
 
 = 1.1.2 =
-- Fixed: Social icon color is not working.
+- Fixed: Icon color: customizer settings don't function.
 - Fixed: Twitter social share link.
 
 = 1.1.1 =
