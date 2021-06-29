@@ -335,7 +335,7 @@ final class Ocean_Product_Sharing {
 		wp_enqueue_style( 'ops-product-share-style', plugins_url( '/assets/css/style.min.css', __FILE__ ) );
 
 		// Load main script
-		wp_enqueue_script( 'ops-product-share-script', plugins_url( '/assets/js/social.min.js', __FILE__ ), array( 'jquery' ), $this->version, true );
+		wp_enqueue_script( 'ops-product-share-script', plugins_url( '/assets/js/social.js', __FILE__ ), array( 'jquery' ), $this->version, true );
 
 		// If rtl
 		if ( is_RTL() ) {
