@@ -93,7 +93,7 @@ final class Ocean_Product_Sharing {
 		$this->token       = 'ocean-product-sharing';
 		$this->plugin_url  = plugin_dir_url( __FILE__ );
 		$this->plugin_path = plugin_dir_path( __FILE__ );
-		$this->version     = '1.1.2';
+		$this->version     = '2.0.0';
 
 		register_activation_hook( __FILE__, array( $this, 'install' ) );
 
