@@ -1,3 +1,6 @@
+= 2.0.0 =
+- Added: Vanilla JS.
+
 = 1.1.2 =
 - Fixed: Icon color: customizer settings don't function.
 - Fixed: Twitter social share link.

@@ -2,9 +2,9 @@
 Contributors: oceanwp, apprimit, wpfleek
 Tags: social, social sharing, social share product, share product, oceanwp
 Requires at least: 5.3
-Tested up to: 5.7.2
-Requires PHP: 7.0
-Stable tag: 1.1.2
+Tested up to: 5.8
+Requires PHP: 7.2
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,9 @@ This plugin will only function with the [OceanWP](https://oceanwp.org/) theme.
 2. On full width page.
 
 == Changelog ==
+
+= 2.0.0 =
+- Added: Vanilla JS.
 
 = 1.1.2 =
 - Fixed: Icon color: customizer settings don't function.
