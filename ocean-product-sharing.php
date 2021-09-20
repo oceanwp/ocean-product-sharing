@@ -97,6 +97,8 @@ final class Ocean_Product_Sharing {
 
 		register_activation_hook( __FILE__, array( $this, 'install' ) );
 
+		add_action( 'after_oceanwp_register_customizer_controls', array( $this, 'setup_customizer_register' ) );
+
 		add_action( 'init', array( $this, 'ops_load_plugin_textdomain' ) );
 
 		add_action( 'init', array( $this, 'ops_setup' ) );
@@ -189,7 +191,37 @@ final class Ocean_Product_Sharing {
 			add_action( 'woocommerce_after_single_product_summary', array( $this, 'ops_product_share' ) );
 			add_action( 'ocean_after_single_download_item', array( $this, 'ops_product_share' ) );
 			add_filter( 'ocean_head_css', array( $this, 'ops_head_css' ) );
+			add_filter( 'oceanwp-customizer-tabs', array( $this, 'register_customizer_tab' ) );
 		}
+	}
+
+	/**
+	 * Register Customizer Tabs
+	 *
+	 * @param array $tabs Theme Customizer Tabs Array.
+	 * @since   2.0.0
+	 */
+	public function register_customizer_tab( $tabs ) {
+		$tabs['ocean-extensions'] = __('Ocean Extensions', 'oceanwp');
+		return $tabs;
+	}
+
+	/**
+	 * Add Customizer Register hook
+	 *
+	 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
+	 * @since   1.0.0
+	 */
+	public function setup_customizer_register( $tab = 'all' ) {
+
+		// Check Customizer Current Tab
+		if( $tab !== 'all'
+			&& $tab !== 'ocean-extensions'
+		) {
+			return;
+		}
+
+		add_action( 'customize_register', array( $this, 'ops_customizer_register' ) );
 	}
 
 	/**
