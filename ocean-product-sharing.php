@@ -185,7 +185,6 @@ final class Ocean_Product_Sharing {
 
 		if ( 'OceanWP' == $theme->name || 'oceanwp' == $theme->template ) {
 			require_once $this->plugin_path . '/includes/helpers.php';
-			add_action( 'customize_register', array( $this, 'ops_customizer_register' ) );
 			add_action( 'customize_preview_init', array( $this, 'ops_customize_preview_js' ) );
 			add_action( 'wp_enqueue_scripts', array( $this, 'ops_get_style' ), 999 );
 			add_action( 'woocommerce_after_single_product_summary', array( $this, 'ops_product_share' ) );
@@ -199,7 +198,7 @@ final class Ocean_Product_Sharing {
 	 * Register Customizer Tabs
 	 *
 	 * @param array $tabs Theme Customizer Tabs Array.
-	 * @since   2.0.0
+	 * @since   2.0.1
 	 */
 	public function register_customizer_tab( $tabs ) {
 		$tabs['ocean-extensions'] = __('Ocean Extensions', 'oceanwp');
@@ -209,8 +208,8 @@ final class Ocean_Product_Sharing {
 	/**
 	 * Add Customizer Register hook
 	 *
-	 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
-	 * @since   1.0.0
+	 * @param $tab Customizer Current Tab.
+	 * @since   2.0.1
 	 */
 	public function setup_customizer_register( $tab = 'all' ) {
 
