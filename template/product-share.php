@@ -19,9 +19,9 @@ if ( empty( $sites ) ) {
 }
 
 // Vars
-$product_title 	= get_the_title();
-$product_url	= get_permalink();
-$product_img	= wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+$product_title = get_the_title();
+$product_url   = get_permalink();
+$product_img   = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 
 <div class="oew-product-share clr">
 
@@ -32,10 +32,11 @@ $product_img	= wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 		foreach ( $sites as $site ) :
 
 			// Twitter
-			if ( 'twitter' == $site ) { ?>
+			if ( 'twitter' == $site ) {
+				?>
 
 				<li class="twitter">
-					<a href="https://twitter.com/intent/tweet?status=<?php echo html_entity_decode( wp_strip_all_tags( $product_title ) ); ?>+<?php echo esc_url( $product_url ); ?>" target="_blank" aria-label="<?php esc_attr_e( 'Share on Twitter', 'ocean-product-sharing' ); ?>" onclick="ops_onClick( this.href );return false;">
+					<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=<?php echo html_entity_decode( wp_strip_all_tags( $product_title ) ); ?>+<?php echo esc_url( $product_url ); ?>" onclick="ops_onClick( this.href );return false;">
 						<span class="screen-reader-text"><?php echo esc_attr__( 'Opens in a new window', 'ocean-product-sharing' ); ?></span>
 						<span class="ops-icon-wrap">
 							<svg class="ops-icon" aria-labelledby="ops-twitter-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -46,9 +47,11 @@ $product_img	= wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 					</a>
 				</li>
 
-			<?php }
+				<?php
+			}
 			// Facebook
-			if ( 'facebook' == $site ) { ?>
+			if ( 'facebook' == $site ) {
+				?>
 
 				<li class="facebook">
 					<a href="https://www.facebook.com/sharer.php?u=<?php echo rawurlencode( esc_url( $product_url ) ); ?>" target="_blank" aria-label="<?php esc_attr_e( 'Share on Facebook', 'ocean-product-sharing' ); ?>" onclick="ops_onClick( this.href );return false;">
@@ -63,9 +66,11 @@ $product_img	= wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 					</a>
 				</li>
 
-			<?php }
+				<?php
+			}
 			// Pinterest
-			if ( 'pinterest' == $site ) { ?>
+			if ( 'pinterest' == $site ) {
+				?>
 
 				<li class="pinterest">
 					<a href="https://www.pinterest.com/pin/create/button/?url=<?php echo rawurlencode( esc_url( $product_url ) ); ?>&amp;media=<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>&amp;description=<?php echo rawurlencode( wp_strip_all_tags( $product_title ) ); ?>" target="_blank" aria-label="<?php esc_attr_e( 'Share on Pinterest', 'ocean-product-sharing' ); ?>" onclick="ops_onClick( this.href );return false;">
@@ -86,9 +91,11 @@ $product_img	= wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 					</a>
 				</li>
 
-			<?php }
+				<?php
+			}
 			// Mail
-			if ( 'email' == $site ) { ?>
+			if ( 'email' == $site ) {
+				?>
 
 				<li class="email">
 					<a href="mailto:?subject=<?php echo html_entity_decode( wp_strip_all_tags( $product_title ) ); ?>&amp;body=<?php echo esc_url( $product_url ); ?>" target="_blank" aria-label="<?php esc_attr_e( 'Share via email', 'ocean-product-sharing' ); ?>" onclick="ops_onClick( this.href );return false;">

@@ -1,3 +1,16 @@
+= 2.0.1 =
+- Added: Updated: WordPress version number for compatibility.
+
+= 2.0.0 =
+- Added: Vanilla JS.
+
+= 1.1.2 =
+- Fixed: Icon color: customizer settings don't function.
+- Fixed: Twitter social share link.
+
+= 1.1.1 =
+- Added: Version updated for WordPress 5.7.
+
 = 1.1.0 =
 - Added: Improved Accessibility.
 - Updated: Translation strings.

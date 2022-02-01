@@ -17,7 +17,7 @@
 	} );
 	wp.customize( 'ops_product_sharing_icons_color', function( value ) {
 		value.bind( function( to ) {
-			$( '.oew-product-share ul li a .ops-icon-wrap .ops-icon' ).css( 'color', to );
+			$( '.oew-product-share ul li a .ops-icon-wrap .ops-icon' ).css( 'fill', to );
 		} );
 	} );
 } )( jQuery );
