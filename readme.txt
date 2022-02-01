@@ -41,7 +41,7 @@ This plugin will only function with the [OceanWP](https://oceanwp.org/) theme.
 == Changelog ==
 
 = 2.0.1 =
-- Added: Updated: WordPress version number for compatibility.
+- Updated: WordPress version number for compatibility.
 
 = 2.0.0 =
 - Added: Vanilla JS.
