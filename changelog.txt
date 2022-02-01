@@ -1,3 +1,6 @@
+= 2.0.1 =
+- Added: Updated: WordPress version number for compatibility.
+
 = 2.0.0 =
 - Added: Vanilla JS.
 
