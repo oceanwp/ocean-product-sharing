@@ -1,3 +1,6 @@
+= 2.0.2 =
+- Updated: Porduct Sharing section is missing from customizer.
+
 = 2.0.1 =
 - Updated: WordPress version number for compatibility.
 
