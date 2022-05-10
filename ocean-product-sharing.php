@@ -7,9 +7,9 @@
  * Author:              OceanWP
  * Author URI:          https://oceanwp.org/
  * Requires at least:   5.3
- * Tested up to:        5.9.1
+ * Tested up to:        5.9.3
  * WC requires at least:3.0
- * WC tested up to:     6.2.1
+ * WC tested up to:     6.4.1
  *
  * Text Domain: ocean-product-sharing
  * Domain Path: /languages
