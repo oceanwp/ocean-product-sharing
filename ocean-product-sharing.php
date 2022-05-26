@@ -210,7 +210,6 @@ final class Ocean_Product_Sharing
      */
     public function ops_customizer_register( $wp_customize )
     {
-
         if ( OCEAN_EXTRA_ACTIVE
 			&& class_exists( 'Ocean_Extra_Theme_Panel' ) ) {
 
