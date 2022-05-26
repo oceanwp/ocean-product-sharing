@@ -1,3 +1,6 @@
+= 2.0.3 =
+- Improved: Theme Panel.
+
 = 2.0.2 =
 - Updated: Porduct Sharing section is missing from customizer.
 

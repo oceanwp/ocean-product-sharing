@@ -3,13 +3,13 @@
  * Plugin Name:         Ocean Product Sharing
  * Plugin URI:          https://oceanwp.org/extension/ocean-product-sharing/
  * Description:         A simple plugin to add social share buttons to your product page, compatible with WooCommerce and Easy Digital Downloads.
- * Version:             2.0.2
+ * Version:             2.0.3
  * Author:              OceanWP
  * Author URI:          https://oceanwp.org/
- * Requires at least:   5.3
- * Tested up to:        5.9.1
+ * Requires at least:   5.6
+ * Tested up to:        6.0.0
  * WC requires at least:3.0
- * WC tested up to:     6.2.1
+ * WC tested up to:     6.5.1
  *
  * Text Domain: ocean-product-sharing
  * Domain Path: /languages
@@ -96,7 +96,7 @@ final class Ocean_Product_Sharing
         $this->token       = 'ocean-product-sharing';
         $this->plugin_url  = plugin_dir_url(__FILE__);
         $this->plugin_path = plugin_dir_path(__FILE__);
-        $this->version     = '2.0.2';
+        $this->version     = '2.0.3';
 
         register_activation_hook(__FILE__, array( $this, 'install' ));
 
@@ -199,6 +199,7 @@ final class Ocean_Product_Sharing
             add_action('woocommerce_after_single_product_summary', array( $this, 'ops_product_share' ));
             add_action('ocean_after_single_download_item', array( $this, 'ops_product_share' ));
             add_filter('ocean_head_css', array( $this, 'ops_head_css' ));
+            add_filter( 'oe_theme_panels', array( $this, 'oe_theme_panels' ) );
         }
     }
 
@@ -209,6 +210,14 @@ final class Ocean_Product_Sharing
      */
     public function ops_customizer_register( $wp_customize )
     {
+        if ( OCEAN_EXTRA_ACTIVE
+			&& class_exists( 'Ocean_Extra_Theme_Panel' ) ) {
+
+			if ( empty( Ocean_Extra_Theme_Panel::get_setting( 'ocean_product_sharing_panel' ) ) ) {
+				return false;
+			}
+
+		}
 
         /**
          * Add a new section
@@ -414,6 +423,21 @@ final class Ocean_Product_Sharing
         return $output;
 
     }
+
+    /**
+	 * Add product sharing switcher.
+	 *
+	 * @since  1.0.0
+	 */
+	public function oe_theme_panels( $panels ) {
+
+		$panels['ocean_product_sharing_panel'] = [
+			'label' => esc_html__('Product Sharing', 'ocean-product-sharing'),
+		];
+
+		// Return panels list
+		return $panels;
+	}
 
 } // End Class
 
