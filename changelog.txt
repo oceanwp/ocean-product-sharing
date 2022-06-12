@@ -1,3 +1,6 @@
+= 2.0.4 =
+- Fixed: Accessibility: Broken aria label reference. 
+
 = 2.0.3 =
 - Improved: Theme Panel.
 
