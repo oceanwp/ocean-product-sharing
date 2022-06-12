@@ -1,6 +1,6 @@
 # Ocean Product Sharing [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-**Contributors:** Nick, [Amit Singh](https://profiles.wordpress.org/apprimit/)
+**Contributors:** The OceanWP Team, [Amit Singh](https://profiles.wordpress.org/apprimit/), [Marko](https://profiles.wordpress.org/wpfleek/)
 **Requires at least:** WordPress 5.6
 **Tested up to:** WordPress 6.0.0
 **Stable tag:** 2.0.4
@@ -9,5 +9,5 @@
 
 ## Description
 
-A simple plugin to add social share buttons to your product page.
+A simple plugin to add social sharing buttons to your single product page.
 This plugin requires the [OceanWP](https://oceanwp.org/) theme to be installed.
