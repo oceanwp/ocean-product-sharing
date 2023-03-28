@@ -40,8 +40,11 @@ This plugin will only function with the [OceanWP](https://oceanwp.org/) theme.
 
 == Changelog ==
 
+= 2.0.5 - MAR 29 2023 =
+- Updated: Version numbers for compatibility.
+
 = 2.0.4 =
-- Fixed: Accessibility: Broken aria label reference. 
+- Fixed: Accessibility: Broken aria label reference.
 
 = 2.0.3 =
 - Improved: Theme Panel.
