@@ -40,6 +40,9 @@ This plugin will only function with the [OceanWP](https://oceanwp.org/) theme.
 
 == Changelog ==
 
+= 2.0.6 - MAY 17 2023 =
+- Compatibility: PHP 8.2: Creation of dynamic property Ocean_Product_Sharing::$plugin_path and Ocean_Product_Sharing::$plugin_url is deprecated.
+
 = 2.0.5 - MAR 29 2023 =
 - Updated: Version numbers for compatibility.
 
