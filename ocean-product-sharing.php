@@ -7,7 +7,7 @@
  * Author:              OceanWP
  * Author URI:          https://oceanwp.org/
  * Requires at least:   5.6
- * Tested up to:        6.2
+ * Tested up to:        6.2.1
  * WC requires at least:3.0
  * WC tested up to:     7.7.0
  *
