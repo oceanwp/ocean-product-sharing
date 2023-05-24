@@ -1,50 +1,57 @@
-# Copyright (C) 2016 
-# This file is distributed under the same license as the  package.
-#, fuzzy
+# Copyright (C) 2023 OceanWP
+# This file is distributed under the same license as the Ocean Product Sharing plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2020-03-18 00:20+0100\n"
+"Project-Id-Version: Ocean Product Sharing 2.0.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ocean-product-sharing\n"
+"Last-Translator: OceanWP <support@oceanwp.org>\n"
+"Language-Team: OceanWP <support@oceanwp.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
-"Last-Translator: OceanWP\n"
-"Language-Team: OceanWP\n"
-"X-Generator: Poedit 2.3\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: _esc_attr__;esc_attr_x;esc_attr_e;esc_html__;"
-"esc_html_e;esc_html_x;__;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
-"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
-"esc_attr__\n"
-"X-Textdomain-Support: yes\n"
-"Language: en_US\n"
-"X-Poedit-SearchPath-0: .\n"
+"POT-Creation-Date: 2023-05-22T05:09:10+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: ocean-product-sharing\n"
 
-#: ocean-product-sharing.php:130 ocean-product-sharing.php:139
-msgid "Cheatin&#8217; huh?"
+#. Plugin Name of the plugin
+msgid "Ocean Product Sharing"
 msgstr ""
 
-#: ocean-product-sharing.php:193
-msgid "Product Sharing"
+#. Plugin URI of the plugin
+msgid "https://oceanwp.org/extension/ocean-product-sharing/"
 msgstr ""
 
-#: ocean-product-sharing.php:206
-msgid "Sharing Buttons"
+#. Description of the plugin
+msgid "A simple plugin to add social sharing buttons to your single product page. Compatible with WooCommerce and Easy Digital Downloads."
 msgstr ""
 
-#: ocean-product-sharing.php:228
-msgid "Borders Color"
+#. Author of the plugin
+msgid "OceanWP"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://oceanwp.org/"
 msgstr ""
 
 #: ocean-product-sharing.php:244
+#: ocean-product-sharing.php:451
+msgid "Product Sharing"
+msgstr ""
+
+#: ocean-product-sharing.php:265
+msgid "Sharing Buttons"
+msgstr ""
+
+#: ocean-product-sharing.php:296
+msgid "Borders Color"
+msgstr ""
+
+#: ocean-product-sharing.php:321
 msgid "Icons Background Color"
 msgstr ""
 
-#: ocean-product-sharing.php:260
+#: ocean-product-sharing.php:346
 msgid "Icons Color"
 msgstr ""
 
@@ -52,35 +59,38 @@ msgstr ""
 msgid "Share this product on social media"
 msgstr ""
 
-#: template/product-share.php:38
-msgid "Share on Twitter"
+#: template/product-share.php:39
+msgid "Share this product on Twitter"
 msgstr ""
 
-#: template/product-share.php:39 template/product-share.php:55
-#: template/product-share.php:72 template/product-share.php:95
+#: template/product-share.php:40
+#: template/product-share.php:58
+#: template/product-share.php:77
+#: template/product-share.php:102
 msgid "Opens in a new window"
 msgstr ""
 
-#: template/product-share.php:45
+#: template/product-share.php:46
 msgid "Tweet This Product"
 msgstr ""
 
-#: template/product-share.php:54 template/product-share.php:62
+#: template/product-share.php:57
+#: template/product-share.php:65
 msgid "Share on Facebook"
 msgstr ""
 
-#: template/product-share.php:71
+#: template/product-share.php:76
 msgid "Share on Pinterest"
 msgstr ""
 
-#: template/product-share.php:85
+#: template/product-share.php:90
 msgid "Pin This Product"
 msgstr ""
 
-#: template/product-share.php:94
+#: template/product-share.php:101
 msgid "Share via email"
 msgstr ""
 
-#: template/product-share.php:104
+#: template/product-share.php:111
 msgid "Mail This Product"
 msgstr ""
