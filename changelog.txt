@@ -1,6 +1,6 @@
 == Changelog ==
 
-= 2.0.6 - MAY 22 2023 =
+= 2.0.6 - MAY 23 2023 =
 - Added: Compatibility: PHP 8.2.6: Creation of dynamic property Ocean_Product_Sharing::$plugin_path and Ocean_Product_Sharing::$plugin_url is deprecated.
 
 = 2.0.5 - MAR 29 2023 =

@@ -2,7 +2,7 @@
 Contributors: oceanwp, apprimit, wpfleek
 Tags: social, social sharing, social share product, share product, oceanwp
 Requires at least: 5.6
-Tested up to: 6.2.1
+Tested up to: 6.2.2
 Requires PHP: 7.2
 Stable tag: 2.0.6
 License: GPLv2 or later
@@ -40,7 +40,7 @@ This plugin will only function with the [OceanWP](https://oceanwp.org/) theme.
 
 == Changelog ==
 
-= 2.0.6 - MAY 22 2023 =
+= 2.0.6 - MAY 23 2023 =
 - Added: Compatibility: PHP 8.2.6: Creation of dynamic property Ocean_Product_Sharing::$plugin_path and Ocean_Product_Sharing::$plugin_url is deprecated.
 
 = 2.0.5 - MAR 29 2023 =
