@@ -1,5 +1,8 @@
 == Changelog ==
 
+= 2.0.8 - NOV XX 2023 =
+- Updated: Social Icons: Updated social icons.
+
 = 2.0.7 - SEP 6 2023 =
 - Updated: Compatibility: WordPress version number.
 
