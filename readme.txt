@@ -15,6 +15,14 @@ Documentation: https://docs.oceanwp.org/
 Extensions: https://oceanwp.org/extensions/
 Email: support@oceanwp.org
 
+== Copyright ==
+
+Ocean Product Sharing uses the following third-party resources:
+
+Font Awesome Icons, Copyright Dave Gandy
+License: CC BY 4.0 License - https://creativecommons.org/licenses/by/4.0/
+Source: https://fontawesome.com/
+
 == Description ==
 
 A simple plugin to add social sharing buttons to your single product pages. Compatible with WooCommerce and Easy Digital Downloads.
