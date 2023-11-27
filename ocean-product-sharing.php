@@ -225,6 +225,20 @@ final class Ocean_Product_Sharing
 			add_action('ocean_after_single_download_item', array( $this, 'ops_product_share' ));
 			add_filter('ocean_head_css', array( $this, 'ops_head_css' ));
 			add_filter( 'oe_theme_panels', array( $this, 'oe_theme_panels' ) );
+
+			// HPOS compatibility.
+			add_action( 'before_woocommerce_init', array( $this, 'ops_hpos_compatibility' ) );
+		}
+	}
+
+	/**
+	 * WooCommerce HPOS compatibility.
+	 *
+	 * @since 2.0.8
+	 */
+	public function ops_hpos_compatibility() {
+		if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
 		}
 	}
 
