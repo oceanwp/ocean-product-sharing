@@ -128,6 +128,9 @@ final class Ocean_Product_Sharing
 		add_action('init', array( $this, 'ops_load_plugin_textdomain' ));
 
 		add_action('init', array( $this, 'ops_setup' ));
+
+		// HPOS compatibility.
+		add_action( 'before_woocommerce_init', array( $this, 'ops_hpos_compatibility' ) );
 	}
 
 	/**
@@ -225,9 +228,6 @@ final class Ocean_Product_Sharing
 			add_action('ocean_after_single_download_item', array( $this, 'ops_product_share' ));
 			add_filter('ocean_head_css', array( $this, 'ops_head_css' ));
 			add_filter( 'oe_theme_panels', array( $this, 'oe_theme_panels' ) );
-
-			// HPOS compatibility.
-			add_action( 'before_woocommerce_init', array( $this, 'ops_hpos_compatibility' ) );
 		}
 	}
 
