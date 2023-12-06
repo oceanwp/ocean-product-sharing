@@ -9,7 +9,7 @@
  * Requires at least:   5.6
  * Tested up to:        6.4.1
  * WC requires at least:3.0
- * WC tested up to:     8.3.0
+ * WC tested up to:     8.3.1
  *
  * Text Domain: ocean-product-sharing
  * Domain Path: /languages

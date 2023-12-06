@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-11-20T04:45:13+00:00\n"
+"POT-Creation-Date: 2023-12-06T08:47:46+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: ocean-product-sharing\n"
@@ -34,24 +34,24 @@ msgstr ""
 msgid "https://oceanwp.org/"
 msgstr ""
 
-#: ocean-product-sharing.php:253
-#: ocean-product-sharing.php:460
+#: ocean-product-sharing.php:267
+#: ocean-product-sharing.php:474
 msgid "Product Sharing"
 msgstr ""
 
-#: ocean-product-sharing.php:274
+#: ocean-product-sharing.php:288
 msgid "Sharing Buttons"
 msgstr ""
 
-#: ocean-product-sharing.php:305
+#: ocean-product-sharing.php:319
 msgid "Borders Color"
 msgstr ""
 
-#: ocean-product-sharing.php:330
+#: ocean-product-sharing.php:344
 msgid "Icons Background Color"
 msgstr ""
 
-#: ocean-product-sharing.php:355
+#: ocean-product-sharing.php:369
 msgid "Icons Color"
 msgstr ""
 
