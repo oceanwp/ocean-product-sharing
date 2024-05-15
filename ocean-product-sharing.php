@@ -3,11 +3,11 @@
  * Plugin Name:         Ocean Product Sharing
  * Plugin URI:          https://oceanwp.org/extension/ocean-product-sharing/
  * Description:         A simple plugin to add social sharing buttons to your single product page. Compatible with WooCommerce and Easy Digital Downloads.
- * Version:             2.0.8
+ * Version:             2.0.9
  * Author:              OceanWP
  * Author URI:          https://oceanwp.org/
  * Requires at least:   5.6
- * Tested up to:        6.4.2
+ * Tested up to:        6.5.2
  * WC requires at least:3.0
  * WC tested up to:     8.3.1
  *
@@ -258,121 +258,23 @@ final class Ocean_Product_Sharing
 
 		}
 
-		/**
-		 * Add a new section
-		 */
-		$wp_customize->add_section(
-			'ops_product_sharing_section',
-			array(
-			'title'    => esc_html__('Product Sharing', 'ocean-product-sharing'),
-			'priority' => 210,
-			)
-		);
+		$path = $this->plugin_path . 'includes/';
+		$options = ocean_customize_options('options', false, $path);
 
-		/**
-		 * Sharing sites
-		 */
-		$wp_customize->add_setting(
-			'ops_product_sharing_sites',
-			array(
-			'default'           => array( 'twitter', 'facebook', 'pinterest', 'email' ),
-			'sanitize_callback' => 'oceanwp_sanitize_multi_choices',
-			)
-		);
+		foreach ( $options as $section_key => $section_options ) {
 
-		$wp_customize->add_control(
-			new OceanWP_Customizer_Sortable_Control(
-				$wp_customize,
-				'ops_product_sharing_sites',
-				array(
-				'label'    => esc_html__('Sharing Buttons', 'ocean-product-sharing'),
-				'section'  => 'ops_product_sharing_section',
-				'settings' => 'ops_product_sharing_sites',
-				'priority' => 10,
-				'choices'  => array(
-				'twitter'   => 'Twitter',
-				'facebook'  => 'Facebook',
-				'pinterest' => 'Pinterest',
-				'email'     => 'Mail',
-					),
-				)
-			)
-		);
+			$section_args = [
+				'title'    => $section_options['title'],
+				'priority' => $section_options['priority']
+			];
 
-		/**
-		 * Borders color
-		 */
-		$wp_customize->add_setting(
-			'ops_product_sharing_borders_color',
-			array(
-			'default'           => '#e9e9e9',
-			'transport'         => 'postMessage',
-			'sanitize_callback' => 'oceanwp_sanitize_color',
-			)
-		);
+			$wp_customize->add_section(
+				$section_key,
+				$section_args
+			);
 
-		$wp_customize->add_control(
-			new OceanWP_Customizer_Color_Control(
-				$wp_customize,
-				'ops_product_sharing_borders_color',
-				array(
-				'label'    => esc_html__('Borders Color', 'ocean-product-sharing'),
-				'section'  => 'ops_product_sharing_section',
-				'settings' => 'ops_product_sharing_borders_color',
-				'priority' => 10,
-				)
-			)
-		);
-
-		/**
-		 * Icons background color
-		 */
-		$wp_customize->add_setting(
-			'ops_product_sharing_icons_bg',
-			array(
-			'default'           => '#333333',
-			'transport'         => 'postMessage',
-			'sanitize_callback' => 'oceanwp_sanitize_color',
-			)
-		);
-
-		$wp_customize->add_control(
-			new OceanWP_Customizer_Color_Control(
-				$wp_customize,
-				'ops_product_sharing_icons_bg',
-				array(
-				'label'    => esc_html__('Icons Background Color', 'ocean-product-sharing'),
-				'section'  => 'ops_product_sharing_section',
-				'settings' => 'ops_product_sharing_icons_bg',
-				'priority' => 10,
-				)
-			)
-		);
-
-		/**
-		 * Icons color
-		 */
-		$wp_customize->add_setting(
-			'ops_product_sharing_icons_color',
-			array(
-			'default'           => '#ffffff',
-			'transport'         => 'postMessage',
-			'sanitize_callback' => 'oceanwp_sanitize_color',
-			)
-		);
-
-		$wp_customize->add_control(
-			new OceanWP_Customizer_Color_Control(
-				$wp_customize,
-				'ops_product_sharing_icons_color',
-				array(
-				'label'    => esc_html__('Icons Color', 'ocean-product-sharing'),
-				'section'  => 'ops_product_sharing_section',
-				'settings' => 'ops_product_sharing_icons_color',
-				'priority' => 10,
-				)
-			)
-		);
+			OceanWP_Customizer_Init::register_options_recursive($wp_customize, $section_key, $section_options['options'] );
+		}
 
 	}
 
