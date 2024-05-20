@@ -1,5 +1,8 @@
 == Changelog ==
 
+= 2.0.9 - MAY 20 2024 =
+- Updated: Compatibility: WordPress version number.
+
 = 2.0.8 - DEC 11 2023 =
 - Added: Compatibility: WooCommerce: HPOS support.
 - Updated: Font Awesome Library to 6.5.1 version.
