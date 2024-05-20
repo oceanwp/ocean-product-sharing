@@ -3,8 +3,8 @@ Contributors: oceanwp, apprimit, wpfleek
 Tags: social, social sharing, social share product, share product, oceanwp
 Requires at least: 5.6
 Tested up to: 6.5.3
-Requires PHP: 7.2
-Stable tag: 2.0.9
+Requires PHP: 7.4
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
