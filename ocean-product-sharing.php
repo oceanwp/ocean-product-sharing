@@ -222,7 +222,7 @@ final class Ocean_Product_Sharing
 		if ('OceanWP' == $theme->name || 'oceanwp' == $theme->template ) {
 			include_once $this->plugin_path . '/includes/helpers.php';
 			add_action('customize_register', array( $this, 'ops_customizer_register' ));
-			add_action('customize_preview_init', array( $this, 'ops_customize_preview_js' ));
+			//add_action('customize_preview_init', array( $this, 'ops_customize_preview_js' ));
 			add_action('wp_enqueue_scripts', array( $this, 'ops_get_style' ), 999);
 			add_action('woocommerce_after_single_product_summary', array( $this, 'ops_product_share' ));
 			add_action('ocean_after_single_download_item', array( $this, 'ops_product_share' ));
