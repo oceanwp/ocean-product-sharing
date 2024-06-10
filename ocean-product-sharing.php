@@ -222,6 +222,7 @@ final class Ocean_Product_Sharing
 		if ('OceanWP' == $theme->name || 'oceanwp' == $theme->template ) {
 			include_once $this->plugin_path . '/includes/helpers.php';
 			add_action('customize_register', array( $this, 'ops_customizer_register' ));
+			add_filter( 'ocean_customize_options_data', array( $this, 'local_customize_options') );
 			//add_action('customize_preview_init', array( $this, 'ops_customize_preview_js' ));
 			add_action('wp_enqueue_scripts', array( $this, 'ops_get_style' ), 999);
 			add_action('woocommerce_after_single_product_summary', array( $this, 'ops_product_share' ));
@@ -276,6 +277,18 @@ final class Ocean_Product_Sharing
 			OceanWP_Customizer_Init::register_options_recursive($wp_customize, $section_key, $section_options['options'] );
 		}
 
+	}
+
+	/**
+	 * Added localize in customizer js
+	 */
+	public function local_customize_options($options) {
+		$path = $this->plugin_path . 'includes/';
+		$optiondata = ocean_customize_options('options', false, $path);
+
+		$options['ocean-product-sharing'] = $optiondata;
+
+		return $options;
 	}
 
 	/**

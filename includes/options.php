@@ -57,7 +57,6 @@ $options = [
 				'priority' => 10,
 				'default'  => ['twitter', 'facebook', 'pinterest', 'email'],
 				'hideLabel' => false,
-				'sanitize_callback' => 'oceanwp_sanitize_multi_choices',
 				'choices' => [
 					'twitter'   => 'Twitter',
                     'facebook'  => 'Facebook',
