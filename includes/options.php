@@ -9,8 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$options = [
-	'ocean_product_sharing_settings' => [
+/**
+ * Customizer Options
+ */
+function ops_customizer_options() {
+
+	$options = [
 		'title' => __( 'Product Sharing', 'ocean-product-sharing' ),
 		'priority' => 13,
 		'options' => [
@@ -49,7 +53,7 @@ $options = [
 				'bottom' => 10
 			],
 
-            'ops_product_sharing_sites' => [
+			'ops_product_sharing_sites' => [
 				'label' => esc_html__( 'Sharing Buttons', 'ocean-product-sharing' ),
 				'type' => 'ocean-sortable',
 				'section'  => 'ocean_product_sharing_settings',
@@ -59,9 +63,9 @@ $options = [
 				'hideLabel' => false,
 				'choices' => [
 					'twitter'   => 'Twitter',
-                    'facebook'  => 'Facebook',
-                    'pinterest' => 'Pinterest',
-                    'email'     => 'Mail',
+					'facebook'  => 'Facebook',
+					'pinterest' => 'Pinterest',
+					'email'     => 'Mail',
 				]
 			],
 
@@ -74,7 +78,7 @@ $options = [
 				'bottom' => 1
 			],
 
-            'ops_product_sharing_borders_color' => [
+			'ops_product_sharing_borders_color' => [
 				'type' => 'ocean-color',
 				'label' => esc_html__( 'Borders Color', 'ocean-product-sharing' ),
 				'section' => 'ocean_product_sharing_settings',
@@ -94,13 +98,13 @@ $options = [
 						],
 						'attr' => [
 							'transport' => 'postMessage',
-                            'default'   => '#e9e9e9',
+							'default'   => '#e9e9e9',
 						],
 					]
 				]
 			],
 
-            'ops_product_sharing_icons_bg' => [
+			'ops_product_sharing_icons_bg' => [
 				'type' => 'ocean-color',
 				'label' => esc_html__( 'Icons Background Color', 'ocean-product-sharing' ),
 				'section' => 'ocean_product_sharing_settings',
@@ -120,13 +124,13 @@ $options = [
 						],
 						'attr' => [
 							'transport' => 'postMessage',
-                            'default'   => '#333333',
+							'default'   => '#333333',
 						],
 					]
 				]
 			],
 
-            'ops_product_sharing_icons_color' => [
+			'ops_product_sharing_icons_color' => [
 				'type' => 'ocean-color',
 				'label' => esc_html__( 'Icons Color', 'ocean-product-sharing' ),
 				'section' => 'ocean_product_sharing_settings',
@@ -146,11 +150,14 @@ $options = [
 						],
 						'attr' => [
 							'transport' => 'postMessage',
-                            'default'   => '#ffffff',
+							'default'   => '#ffffff',
 						],
 					]
 				]
-            ],
-        ]
-    ]
-];
+			],
+		]
+	];
+
+	return apply_filters( 'ops_customizer_options', $options );
+
+}

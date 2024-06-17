@@ -221,8 +221,7 @@ final class Ocean_Product_Sharing
 
 		if ('OceanWP' == $theme->name || 'oceanwp' == $theme->template ) {
 			include_once $this->plugin_path . '/includes/helpers.php';
-			add_action('customize_register', array( $this, 'ops_customizer_register' ));
-			add_filter( 'ocean_customize_options_data', array( $this, 'local_customize_options') );
+			add_filter( 'ocean_customize_options_data', array( $this, 'register_customize_options') );
 			//add_action('customize_preview_init', array( $this, 'ops_customize_preview_js' ));
 			add_action('wp_enqueue_scripts', array( $this, 'ops_get_style' ), 999);
 			add_action('woocommerce_after_single_product_summary', array( $this, 'ops_product_share' ));
@@ -244,12 +243,10 @@ final class Ocean_Product_Sharing
 	}
 
 	/**
-	 * Customizer Controls and settings
-	 *
-	 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
+	 * Added localize in customizer js
 	 */
-	public function ops_customizer_register( $wp_customize )
-	{
+	public function register_customize_options($options) {
+
 		if ( OCEAN_EXTRA_ACTIVE
 			&& class_exists( 'Ocean_Extra_Theme_Panel' ) ) {
 
@@ -259,34 +256,9 @@ final class Ocean_Product_Sharing
 
 		}
 
-		$path = $this->plugin_path . 'includes/';
-		$options = ocean_customize_options('options', false, $path);
+		include_once $this->plugin_path . '/includes/options.php';
 
-		foreach ( $options as $section_key => $section_options ) {
-
-			$section_args = [
-				'title'    => $section_options['title'],
-				'priority' => $section_options['priority']
-			];
-
-			$wp_customize->add_section(
-				$section_key,
-				$section_args
-			);
-
-			OceanWP_Customizer_Init::register_options_recursive($wp_customize, $section_key, $section_options['options'] );
-		}
-
-	}
-
-	/**
-	 * Added localize in customizer js
-	 */
-	public function local_customize_options($options) {
-		$path = $this->plugin_path . 'includes/';
-		$optiondata = ocean_customize_options('options', false, $path);
-
-		$options['ocean-product-sharing'] = $optiondata;
+		$options['ocean_product_sharing_settings'] = ops_customizer_options();
 
 		return $options;
 	}
