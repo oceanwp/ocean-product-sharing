@@ -16,43 +16,8 @@ function ops_customizer_options() {
 
 	$options = [
 		'title' => __( 'Product Sharing', 'ocean-product-sharing' ),
-		'priority' => 13,
+		'priority' => 16,
 		'options' => [
-			'ops_top_quick_links' => [
-				'type' => 'ocean-links',
-				'label' => esc_html__( 'Quick Menu', 'ocean-product-sharing' ),
-				'section' => 'ocean_product_sharing_settings',
-				'transport' => 'postMessage',
-				'priority' => 10,
-				'class' => 'top-quick-links',
-				'linkIcon' => 'link-2',
-				'titleIcon' => 'three-dot-menu',
-				'active_callback' => 'ocean_is_oe_active',
-				'links' => [
-					'website_layout' => [
-						'label' => esc_html__('Website Layout', 'ocean-product-sharing'),
-						'url' => '#'
-					],
-					'scroll_top' => [
-						'label' => esc_html__('Scroll To Top', 'ocean-product-sharing'),
-						'url' => '#'
-					],
-					'pagination' => [
-						'label' => esc_html__('Pagination', 'ocean-product-sharing'),
-						'url' => '#'
-					]
-				]
-			],
-
-			'ops_divider_after_top_quick_links' => [
-				'type' => 'ocean-divider',
-				'section' => 'ocean_product_sharing_settings',
-				'transport' => 'postMessage',
-				'priority' => 10,
-				'top' => 10,
-				'bottom' => 10
-			],
-
 			'ops_product_sharing_sites' => [
 				'label' => esc_html__( 'Sharing Buttons', 'ocean-product-sharing' ),
 				'type' => 'ocean-sortable',
@@ -155,6 +120,22 @@ function ops_customizer_options() {
 					]
 				]
 			],
+
+			'ops_divider_for_need_help_link' => [
+				'type' => 'ocean-divider',
+				'section' => 'ocean_product_sharing_settings',
+				'transport' => 'postMessage',
+				'priority' => 10,
+			],
+
+			'ops_need_help_link' => [
+				'type' => 'ocean-content',
+				'isContent' => sprintf( esc_html__( '%1$s Need Help? %2$s', 'oceanwp' ), '<a href="http://docs.oceanwp.org/category/369-shortcodes" target="_blank">', '</a>' ),
+				'class' => 'need-help',
+				'section' => 'ocean_product_sharing_settings',
+				'transport' => 'postMessage',
+				'priority' => 10,
+			]
 		]
 	];
 
