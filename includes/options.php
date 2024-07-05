@@ -130,7 +130,7 @@ function ops_customizer_options() {
 
 			'ops_need_help_link' => [
 				'type' => 'ocean-content',
-				'isContent' => sprintf( esc_html__( '%1$s Need Help? %2$s', 'oceanwp' ), '<a href="http://docs.oceanwp.org/category/369-shortcodes" target="_blank">', '</a>' ),
+				'isContent' => ocean_render_content_need_help(),
 				'class' => 'need-help',
 				'section' => 'ocean_product_sharing_settings',
 				'transport' => 'postMessage',
