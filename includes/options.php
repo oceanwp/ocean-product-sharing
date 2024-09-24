@@ -33,6 +33,7 @@ function ops_customizer_options() {
 				'priority'  => 10,
 				'default'   => ['twitter', 'facebook', 'pinterest', 'email'],
 				'hideLabel' => false,
+				'sanitize_callback' => 'ocean_sanitize_sortable_control',
 				'choices'   => [
 					'twitter'   => 'X (ex Twitter)',
 					'facebook'  => 'Facebook',
