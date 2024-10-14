@@ -3,13 +3,13 @@
  * Plugin Name:         Ocean Product Sharing
  * Plugin URI:          https://oceanwp.org/extension/ocean-product-sharing/
  * Description:         A simple plugin to add social sharing buttons to your single product page. Compatible with WooCommerce and Easy Digital Downloads.
- * Version:             2.0.9
+ * Version:             2.1.0
  * Author:              OceanWP
  * Author URI:          https://oceanwp.org/
  * Requires at least:   5.6
- * Tested up to:        6.5.3
+ * Tested up to:        6.6.2
  * WC requires at least:3.0
- * WC tested up to:     8.8.3
+ * WC tested up to:     9.3.3
  *
  * Text Domain: ocean-product-sharing
  * Domain Path: /languages
@@ -228,6 +228,29 @@ final class Ocean_Product_Sharing
 			add_action('ocean_after_single_download_item', array( $this, 'ops_product_share' ));
 			add_filter('ocean_head_css', array( $this, 'ops_head_css' ));
 			add_filter( 'oe_theme_panels', array( $this, 'oe_theme_panels' ) );
+
+			$theme_version = $theme->version;
+
+			$current_theme_version = $theme_version;
+
+			if ( get_template_directory() == get_stylesheet_directory() ) {
+				$current_theme_version  = $theme_version;
+			} else {
+				$parent = wp_get_theme()->parent();
+				if ( ! empty( $parent) ) {
+					$current_theme_version = $parent->Version;
+				}
+			}
+
+			if ( version_compare( $current_theme_version, '3.6.1', '<=' ) ) {
+
+				$is_ocean_extra_active = class_exists( 'Ocean_Extra' );
+				$is_ocean_extra_version_valid = defined( 'OE_VERSION' ) && version_compare( OE_VERSION, '2.3.1', '<=' );
+
+				if ( ! $is_ocean_extra_active || $is_ocean_extra_version_valid ) {
+					include_once $this->plugin_path . '/includes/update-message.php';
+				}
+			}
 		}
 	}
 

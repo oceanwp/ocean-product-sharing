@@ -2,56 +2,100 @@
 # This file is distributed under the same license as the Ocean Product Sharing plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ocean Product Sharing 2.0.9\n"
+"Project-Id-Version: Ocean Product Sharing 2.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ocean-product-sharing\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-05-20T05:02:00+00:00\n"
+"POT-Creation-Date: 2024-10-11T11:33:48+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: ocean-product-sharing\n"
 
 #. Plugin Name of the plugin
+#: ocean-product-sharing.php
 msgid "Ocean Product Sharing"
 msgstr ""
 
 #. Plugin URI of the plugin
+#: ocean-product-sharing.php
 msgid "https://oceanwp.org/extension/ocean-product-sharing/"
 msgstr ""
 
 #. Description of the plugin
+#: ocean-product-sharing.php
 msgid "A simple plugin to add social sharing buttons to your single product page. Compatible with WooCommerce and Easy Digital Downloads."
 msgstr ""
 
 #. Author of the plugin
+#: ocean-product-sharing.php
+#: includes/update-message.php:84
 msgid "OceanWP"
 msgstr ""
 
 #. Author URI of the plugin
+#: ocean-product-sharing.php
 msgid "https://oceanwp.org/"
 msgstr ""
 
-#: ocean-product-sharing.php:267
-#: ocean-product-sharing.php:474
+#: includes/update-message.php:40
+msgid "Backup recommended before plugin update."
+msgstr ""
+
+#. translators: %1$s Link open tag, %2$s: Link close tag.
+#: includes/update-message.php:46
+msgid "The latest update introduces significant improvements and changes to various plugin features.  For a smooth update process, it's crucial to %1$s backup your website beforehand  %2$s and test the update in a staging or test environment if available."
+msgstr ""
+
+#: includes/update-message.php:62
+msgid "What's new?"
+msgstr ""
+
+#. translators: %1$s Link open tag, %2$s: Link close tag.
+#: includes/update-message.php:68
+msgid "Revamped Customizer for enhanced experience! This update delivers a completely redesigned Customizer with a focus on improved user interface (UI), user experience (UX), and performance. Enjoy a faster and more intuitive way to personalize your website with a wider range of options at your fingertips. Learn %1$s how to properly update your websites and transition to OceanWP 4 %4$s, view %2$s OceanWP 4 New Customizer details %4$s or check out the %3$s OceanWP 4 Customizer documentation %4$s."
+msgstr ""
+
+#: includes/update-message.php:80
+msgid "Items"
+msgstr ""
+
+#: includes/update-message.php:81
+msgid "Required Version"
+msgstr ""
+
+#: includes/update-message.php:85
+msgid "4.0.0"
+msgstr ""
+
+#: includes/update-message.php:88
+msgid "Ocean Extra"
+msgstr ""
+
+#: includes/update-message.php:89
+msgid "2.4.0"
+msgstr ""
+
+#: ocean-product-sharing.php:290
+#: ocean-product-sharing.php:497
 msgid "Product Sharing"
 msgstr ""
 
-#: ocean-product-sharing.php:288
+#: ocean-product-sharing.php:311
 msgid "Sharing Buttons"
 msgstr ""
 
-#: ocean-product-sharing.php:319
+#: ocean-product-sharing.php:342
 msgid "Borders Color"
 msgstr ""
 
-#: ocean-product-sharing.php:344
+#: ocean-product-sharing.php:367
 msgid "Icons Background Color"
 msgstr ""
 
-#: ocean-product-sharing.php:369
+#: ocean-product-sharing.php:392
 msgid "Icons Color"
 msgstr ""
 
