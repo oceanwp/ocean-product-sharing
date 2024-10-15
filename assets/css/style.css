@@ -7,10 +7,14 @@
   text-align: center;
 }
 .oew-product-share ul {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   list-style: none;
@@ -37,11 +41,13 @@
   border-radius: 0;
 }
 .oew-product-share ul li a .ops-icon-wrap {
+  display: -webkit-inline-flex;
   display: -ms-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #333;
@@ -51,6 +57,10 @@
   font-size: 16px;
   border-radius: 50%;
   vertical-align: middle;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .oew-product-share ul li a .ops-icon-wrap .ops-icon {
@@ -117,6 +127,7 @@
 *------------------------------------*/
 @media only screen and (max-width: 767px) {
   .oew-product-share ul {
+    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
