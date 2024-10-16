@@ -1,5 +1,12 @@
 == Changelog ==
 
+= 2.2.0 - OCT 16 2024 =
+- NEW: Customizer: Library upgraded to default WordPress ReactJS.
+- NEW: Customizer: Customizer Controls.
+- NEW: Customizer: User Interface.
+- NEW: Customizer: Reorganized settings for improved user experience.
+- Removed: Customizer: Legacy PHP Controls.
+
 = 2.1.0 - OCT 11 2024 =
 - Added: Conditional checks for future updates.
 - Updated: Compatibility: WordPress version number.

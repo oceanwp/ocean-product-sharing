@@ -18,6 +18,10 @@ if ( ! function_exists( 'ops_social_share_sites' ) ) {
 		// Get socials from Customizer
 		$socials = get_theme_mod( 'ops_product_sharing_sites', $socials );
 
+		if (is_string($socials)) {
+			$socials = json_decode($socials, true);
+		}
+
 		// Turn into array if string
 		if ( $socials && ! is_array( $socials ) ) {
 			$socials = explode( ',', $socials );
