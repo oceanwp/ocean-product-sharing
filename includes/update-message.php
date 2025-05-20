@@ -21,7 +21,6 @@ if ( ! class_exists( 'OPS_Plugin_Update_Message' ) ) :
 		public function __construct() {
 
 			add_action( 'in_plugin_update_message-ocean-product-sharing/ocean-product-sharing.php', array( $this, 'plugin_update_message' ), 10, 2 );
-			add_action( 'after_plugin_row_ocean-product-sharing/ocean-product-sharing.php', array( $this, 'ms_plugin_update_message' ), 10, 2 );
 			add_action( 'admin_enqueue_scripts', array( $this, 'plugin_update_asset' ) );
 		}
 
@@ -107,28 +106,6 @@ if ( ! class_exists( 'OPS_Plugin_Update_Message' ) ) :
 
 				$this->plugin_update_content();
 
-			}
-
-		}
-
-		/**
-		 * Enqueue scripts
-		 *
-		 * @since   2.2.9
-		 */
-		public function ms_plugin_update_message( $file, $plugin ) {
-
-			if ( is_multisite() && version_compare( $plugin['Version'], $plugin['new_version'], '<') ) {
-
-				$wp_list_table = _get_list_table( 'WP_Plugins_List_Table' );
-
-				printf(
-					'<tr class="plugin-update-tr">
-						<td colspan="%s" class="plugin-update update-message notice inline notice-warning notice-alt">%s</td>
-					</tr>',
-					$wp_list_table->get_column_count(),
-					$this->plugin_update_content()
-				);
 			}
 
 		}

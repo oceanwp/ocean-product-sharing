@@ -1,5 +1,8 @@
 == Changelog ==
 
+= 2.2.1 - MAY 19 2025 =
+- Updated: Compatibility: WordPress version number.
+
 = 2.2.0 - OCT 16 2024 =
 - NEW: Customizer: Library upgraded to default WordPress ReactJS.
 - NEW: Customizer: Customizer Controls.
