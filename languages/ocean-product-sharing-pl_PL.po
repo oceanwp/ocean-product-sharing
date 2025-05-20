@@ -3,8 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2020-03-18 00:22+0100\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ocean-product-"
+"sharing\n"
+"POT-Creation-Date: 2025-05-19T03:24:46+00:00\n"
 "PO-Revision-Date: 2020-03-18 00:23+0100\n"
 "Last-Translator: \n"
 "Language-Team: OceanWP\n"
@@ -24,68 +25,162 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: ocean-product-sharing.php:130 ocean-product-sharing.php:139
-msgid "Cheatin&#8217; huh?"
-msgstr "Oszukujemy&#8217; co?"
+#. Plugin Name of the plugin
+#: ocean-product-sharing.php
+#, fuzzy
+msgid "Ocean Product Sharing"
+msgstr "Udostępnianie programu"
 
-#: ocean-product-sharing.php:193
+#. Plugin URI of the plugin
+#: ocean-product-sharing.php
+msgid "https://oceanwp.org/extension/ocean-product-sharing/"
+msgstr ""
+
+#. Description of the plugin
+#: ocean-product-sharing.php
+msgid ""
+"A simple plugin to add social sharing buttons to your single product page. "
+"Compatible with WooCommerce and Easy Digital Downloads."
+msgstr ""
+
+#. Author of the plugin
+#: ocean-product-sharing.php includes/update-message.php:84
+msgid "OceanWP"
+msgstr ""
+
+#. Author URI of the plugin
+#: ocean-product-sharing.php
+msgid "https://oceanwp.org/"
+msgstr ""
+
+#: includes/options.php:18 ocean-product-sharing.php:384
 msgid "Product Sharing"
 msgstr "Udostępnianie programu"
 
-#: ocean-product-sharing.php:206
+#: includes/options.php:29
 msgid "Sharing Buttons"
 msgstr ""
 
-#: ocean-product-sharing.php:228
-msgid "Borders Color"
+#: includes/options.php:56
+#, fuzzy
+msgid "PS Borders"
 msgstr "Kolor obramowania"
 
-#: ocean-product-sharing.php:244
-msgid "Icons Background Color"
+#: includes/options.php:68 includes/options.php:94 includes/options.php:120
+#, fuzzy
+msgid "Select Color"
+msgstr "Kolor ikon"
+
+#: includes/options.php:82
+#, fuzzy
+msgid "PS Background"
 msgstr "Kolor tła ikon"
 
-#: ocean-product-sharing.php:260
-msgid "Icons Color"
-msgstr "Kolor ikon"
+#: includes/options.php:108
+msgid "PS Icons"
+msgstr ""
+
+#: includes/options.php:134
+#, php-format
+msgid "%1$s Need Help? %2$s"
+msgstr ""
+
+#: includes/update-message.php:40
+msgid "Backup recommended before plugin update."
+msgstr ""
+
+#. translators: %1$s Link open tag, %2$s: Link close tag.
+#: includes/update-message.php:46
+#, php-format
+msgid ""
+"The latest update introduces significant improvements and changes to various "
+"plugin features.  For a smooth update process, it's crucial to %1$s backup "
+"your website beforehand  %2$s and test the update in a staging or test "
+"environment if available."
+msgstr ""
+
+#: includes/update-message.php:62
+msgid "What's new?"
+msgstr ""
+
+#. translators: %1$s Link open tag, %2$s: Link close tag.
+#: includes/update-message.php:68
+#, php-format
+msgid ""
+"Revamped Customizer for enhanced experience! This update delivers a "
+"completely redesigned Customizer with a focus on improved user interface "
+"(UI), user experience (UX), and performance. Enjoy a faster and more "
+"intuitive way to personalize your website with a wider range of options at "
+"your fingertips. Learn %1$s how to properly update your websites and "
+"transition to OceanWP 4 %4$s, view %2$s OceanWP 4 New Customizer details "
+"%4$s or check out the %3$s OceanWP 4 Customizer documentation %4$s."
+msgstr ""
+
+#: includes/update-message.php:80
+msgid "Items"
+msgstr ""
+
+#: includes/update-message.php:81
+msgid "Required Version"
+msgstr ""
+
+#: includes/update-message.php:85
+msgid "4.0.0"
+msgstr ""
+
+#: includes/update-message.php:88
+msgid "Ocean Extra"
+msgstr ""
+
+#: includes/update-message.php:89
+msgid "2.4.0"
+msgstr ""
 
 #: template/product-share.php:28
 msgid "Share this product on social media"
 msgstr ""
 
-#: template/product-share.php:38
+#: template/product-share.php:39
 #, fuzzy
-#| msgid "Share on Facebook"
-msgid "Share on Twitter"
-msgstr "Udostępnij na Facebook'u"
+msgid "Share this product on X"
+msgstr "Wyślij mailem"
 
-#: template/product-share.php:39 template/product-share.php:55
-#: template/product-share.php:72 template/product-share.php:95
+#: template/product-share.php:40 template/product-share.php:58
+#: template/product-share.php:78 template/product-share.php:101
 msgid "Opens in a new window"
 msgstr ""
 
-#: template/product-share.php:45
+#: template/product-share.php:46
 msgid "Tweet This Product"
 msgstr "Publikuj na Tweeter'ze"
 
-#: template/product-share.php:54 template/product-share.php:62
+#: template/product-share.php:57 template/product-share.php:66
 msgid "Share on Facebook"
 msgstr "Udostępnij na Facebook'u"
 
-#: template/product-share.php:71
+#: template/product-share.php:77
 msgid "Share on Pinterest"
 msgstr ""
 
-#: template/product-share.php:85
+#: template/product-share.php:89
 msgid "Pin This Product"
 msgstr "Zapisz na Pinterest"
 
-#: template/product-share.php:94
+#: template/product-share.php:100
 msgid "Share via email"
 msgstr ""
 
-#: template/product-share.php:104
+#: template/product-share.php:108
 msgid "Mail This Product"
 msgstr "Wyślij mailem"
+
+#~ msgid "Cheatin&#8217; huh?"
+#~ msgstr "Oszukujemy&#8217; co?"
+
+#, fuzzy
+#~| msgid "Share on Facebook"
+#~ msgid "Share on Twitter"
+#~ msgstr "Udostępnij na Facebook'u"
 
 #~ msgid ""
 #~ "Ocean Product Sharing requires that you use ocean as your parent theme."
