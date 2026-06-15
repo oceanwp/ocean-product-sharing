@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Ocean Product Sharing plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ocean Product Sharing 2.2.2\n"
+"Project-Id-Version: Ocean Product Sharing 2.2.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ocean-product-sharing\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-05-19T08:58:10+00:00\n"
+"POT-Creation-Date: 2026-06-15T09:42:46+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: ocean-product-sharing\n"
@@ -112,42 +112,42 @@ msgstr ""
 msgid "2.4.0"
 msgstr ""
 
-#: template/product-share.php:28
+#: template/product-share.php:62
 msgid "Share this product on social media"
 msgstr ""
 
-#: template/product-share.php:39
+#: template/product-share.php:73
 msgid "Share this product on X"
 msgstr ""
 
-#: template/product-share.php:40
-#: template/product-share.php:58
-#: template/product-share.php:78
-#: template/product-share.php:101
+#: template/product-share.php:74
+#: template/product-share.php:92
+#: template/product-share.php:112
+#: template/product-share.php:135
 msgid "Opens in a new window"
 msgstr ""
 
-#: template/product-share.php:46
+#: template/product-share.php:80
 msgid "Tweet This Product"
 msgstr ""
 
-#: template/product-share.php:57
-#: template/product-share.php:66
+#: template/product-share.php:91
+#: template/product-share.php:100
 msgid "Share on Facebook"
 msgstr ""
 
-#: template/product-share.php:77
+#: template/product-share.php:111
 msgid "Share on Pinterest"
 msgstr ""
 
-#: template/product-share.php:89
+#: template/product-share.php:123
 msgid "Pin This Product"
 msgstr ""
 
-#: template/product-share.php:100
+#: template/product-share.php:134
 msgid "Share via email"
 msgstr ""
 
-#: template/product-share.php:108
+#: template/product-share.php:142
 msgid "Mail This Product"
 msgstr ""
