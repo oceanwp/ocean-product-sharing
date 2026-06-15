@@ -19,9 +19,43 @@ if ( empty( $sites ) ) {
 }
 
 // Vars
-$product_title = get_the_title();
+$product_title = wp_strip_all_tags( get_the_title() );
 $product_url   = get_permalink();
-$product_img   = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+$product_img   = wp_get_attachment_url( get_post_thumbnail_id() );
+
+$twitter_url = add_query_arg(
+	array(
+		'text' => $product_title,
+		'url'  => $product_url,
+	),
+	'https://twitter.com/intent/tweet'
+);
+
+$facebook_url = add_query_arg(
+	array(
+		'u' => $product_url,
+	),
+	'https://www.facebook.com/sharer.php'
+);
+
+$pinterest_url = add_query_arg(
+	array(
+		'url'         => $product_url,
+		'media'       => $product_img,
+		'description' => $product_title,
+	),
+	'https://www.pinterest.com/pin/create/button/'
+);
+
+$email_url = add_query_arg(
+	array(
+		'subject' => $product_title,
+		'body'    => $product_url,
+	),
+	'mailto:'
+);
+
+?>
 
 <div class="oew-product-share clr">
 
@@ -36,7 +70,7 @@ $product_img   = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 				?>
 
 				<li class="twitter">
-					<a aria-label="<?php esc_attr_e( 'Share this product on X', 'ocean-product-sharing' ); ?>" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=<?php echo html_entity_decode( wp_strip_all_tags( $product_title ) ); ?>+<?php echo esc_url( $product_url ); ?>" onclick="ops_onClick( this.href );return false;">
+					<a aria-label="<?php esc_attr_e( 'Share this product on X', 'ocean-product-sharing' ); ?>" class="twitter-share-button" href="<?php echo esc_url( $twitter_url ); ?>" onclick="ops_onClick( this.href );return false;">
 						<span class="screen-reader-text"><?php echo esc_attr__( 'Opens in a new window', 'ocean-product-sharing' ); ?></span>
 						<span class="ops-icon-wrap">
 							<svg class="ops-icon" role="img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -54,7 +88,7 @@ $product_img   = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 				?>
 
 				<li class="facebook">
-					<a href="https://www.facebook.com/sharer.php?u=<?php echo rawurlencode( esc_url( $product_url ) ); ?>" target="_blank" aria-label="<?php esc_attr_e( 'Share on Facebook', 'ocean-product-sharing' ); ?>" onclick="ops_onClick( this.href );return false;">
+					<a href="<?php echo esc_url( $facebook_url ); ?>" target="_blank" aria-label="<?php esc_attr_e( 'Share on Facebook', 'ocean-product-sharing' ); ?>" onclick="ops_onClick( this.href );return false;">
 						<span class="screen-reader-text"><?php echo esc_attr__( 'Opens in a new window', 'ocean-product-sharing' ); ?></span>
 						<span class="ops-icon-wrap">
 							<svg class="ops-icon" role="img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -74,7 +108,7 @@ $product_img   = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 				?>
 
 				<li class="pinterest">
-					<a href="https://www.pinterest.com/pin/create/button/?url=<?php echo rawurlencode( esc_url( $product_url ) ); ?>&amp;media=<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>&amp;description=<?php echo rawurlencode( wp_strip_all_tags( $product_title ) ); ?>" target="_blank" aria-label="<?php esc_attr_e( 'Share on Pinterest', 'ocean-product-sharing' ); ?>" onclick="ops_onClick( this.href );return false;">
+					<a href="<?php echo esc_url( $pinterest_url ); ?>" target="_blank" aria-label="<?php esc_attr_e( 'Share on Pinterest', 'ocean-product-sharing' ); ?>" onclick="ops_onClick( this.href );return false;">
 						<span class="screen-reader-text"><?php echo esc_attr__( 'Opens in a new window', 'ocean-product-sharing' ); ?></span>
 						<span class="ops-icon-wrap">
 							<svg class="ops-icon" role="img" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -97,7 +131,7 @@ $product_img   = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 				?>
 
 				<li class="email">
-					<a href="mailto:?subject=<?php echo html_entity_decode( wp_strip_all_tags( $product_title ) ); ?>&amp;body=<?php echo esc_url( $product_url ); ?>" target="_blank" aria-label="<?php esc_attr_e( 'Share via email', 'ocean-product-sharing' ); ?>" onclick="ops_onClick( this.href );return false;">
+					<a href="<?php echo esc_url( $email_url, array( 'mailto' ) ); ?>" target="_blank" aria-label="<?php esc_attr_e( 'Share via email', 'ocean-product-sharing' ); ?>" onclick="ops_onClick( this.href );return false;">
 						<span class="screen-reader-text"><?php echo esc_attr__( 'Opens in a new window', 'ocean-product-sharing' ); ?></span>
 						<span class="ops-icon-wrap">
 							<svg class="ops-icon" role="img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">

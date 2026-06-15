@@ -3,13 +3,13 @@
  * Plugin Name:         Ocean Product Sharing
  * Plugin URI:          https://oceanwp.org/extension/ocean-product-sharing/
  * Description:         A simple plugin to add social sharing buttons to your single product page. Compatible with WooCommerce and Easy Digital Downloads.
- * Version:             2.2.2
+ * Version:             2.2.3
  * Author:              OceanWP
  * Author URI:          https://oceanwp.org/
  * Requires at least:   5.6
  * Tested up to:        7.0
  * WC requires at least:3.0
- * WC tested up to:     10.8.0
+ * WC tested up to:     10.8.1
  *
  * Text Domain: ocean-product-sharing
  * Domain Path: /languages
