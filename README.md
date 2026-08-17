@@ -2,8 +2,8 @@
 
 **Contributors:** The OceanWP Team, [Amit Singh](https://profiles.wordpress.org/apprimit/), [Marko](https://profiles.wordpress.org/wpfleek/)
 **Requires at least:** WordPress 5.6
-**Tested up to:** WordPress 7.0
-**Stable tag:** 2.2.3
+**Tested up to:** WordPress 7.1
+**Stable tag:** 2.2.4
 **License:** GPLv2 or later
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 

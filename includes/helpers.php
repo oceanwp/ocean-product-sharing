@@ -5,6 +5,11 @@
  * @package Ocean WordPress theme
  */
 
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 /**
  * Returns social sharing template part
  */
