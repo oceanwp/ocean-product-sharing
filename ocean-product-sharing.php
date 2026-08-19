@@ -9,7 +9,7 @@
  * Requires at least:   5.6
  * Tested up to:        7.1
  * WC requires at least:3.0
- * WC tested up to:     10.8.1
+ * WC tested up to:     11.0.1
  * License:             GPLv2 or later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
  *
